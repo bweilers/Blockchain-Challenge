@@ -51,10 +51,16 @@ import hashlib
 # `amount` attributes
 @dataclass
 class Record:
-    def __init__(self, sender, receiver, amount):
-        self.sender = str(sender)
-        self.receiver = str(receiver)
-        self.amount = float(amount)
+    # def __init__(self, sender, receiver, amount):
+    #     self.sender = str(sender)
+    #     self.receiver = str(receiver)
+    #     self.amount = float(amount)
+    sender: str
+    receiver: str
+    amount: float
+
+
+
 
 
 ################################################################################
@@ -73,7 +79,7 @@ class Block:
 
     # @TODO
     # Rename the `data` attribute to `record`, and set the data type to `Record`
-    data: Any
+    record: Record()
 
     creator_id: int
     prev_hash: str = "0"
