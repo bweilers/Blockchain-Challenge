@@ -167,7 +167,6 @@ if st.button("Validate Chain"):
     st.write(pychain.is_valid())
 
 ################################################################################
-# Step 4:
 # To test the PyChain Ledger
 # 1. In the terminal, navigate to the project folder where you've coded the
 #  Challenge.
